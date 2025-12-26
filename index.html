@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Таргетированная реклама в Facebook и Instagram </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts (спокойный, tilda-style) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- === ВСТАВЬТЕ СЮДА GTM (HEAD) === -->
+
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --text: #1f1f1f;
+      --muted: #6b6b6b;
+      --accent: #1f7a6b;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 12px;
+      color: var(--muted);
+    }
+
+    ul li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 14px 28px;
+      background-color: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #166256;
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    /* SECTIONS */
+    section {
+      margin-top: 120px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 28px;
+      border-radius: 12px;
+    }
+
+    .steps {
+      counter-reset: step;
+    }
+
+    .steps li {
+      counter-increment: step;
+      padding-left: 36px;
+    }
+
+    .steps li::before {
+      content: counter(step) ".";
+      left: 0;
+      font-weight: 500;
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 140px;
+      padding: 60px 20px;
+      text-align: center;
+      background: #ffffff;
+    }
+
+    footer p {
+      margin-bottom: 20px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      .container {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- === ВСТАВЬТЕ СЮДА GTM (BODY) === -->
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1>Таргетированная реклама в Facebook и Instagram</h1>
+
+      <p>Меня зовут Виталия.<br>
+      Я помогаю бизнесу получать первые заявки и тестировать рекламу в Meta Ads.</p>
+
+      <p>Работаю с небольшими проектами, экспертами и локальными услугами.</p>
+
+      <a class="btn" href="https://wa.me/77015709523" target="_blank">
+        Написать в WhatsApp
+      </a>
+    </div>
+
+    <div>
+      <!-- ЗАМЕНИТЕ ПУТЬ НА ИМЯ ФАЙЛА С ВАШИМ ФОТО -->
+      <img src="Vitalia photo 3g" alt="Виталия — таргетолог">
+    </div>
+  </div>
+
+  <!-- WHO -->
+  <section>
+    <h2>Кому подойдут мои услуги</h2>
+    <ul>
+      <li>вы запускаете таргетированную рекламу впервые</li>
+      <li>вам нужен небольшой тестовый рекламный бюджет</li>
+      <li>важно понимать, куда уходят деньги и какие объявления работают</li>
+      <li>вы хотите рекламу без сложных терминов и непонятных процессов</li>
+    </ul>
+  </section>
+
+  <!-- WHAT I DO -->
+  <section>
+    <h2>Что я делаю как таргетолог</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Анализ и подготовка</h3>
+        <ul>
+          <li>разбор ниши и предложения</li>
+          <li>определение целевой аудитории</li>
+          <li>помощь с формулировкой оффера</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Настройка рекламы</h3>
+        <ul>
+          <li>создание и настройка рекламного кабинета Meta</li>
+          <li>запуск рекламы в Facebook и Instagram</li>
+          <li>подбор форматов объявлений</li>
+          <li>настройка аудиторий</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Аналитика и контроль</h3>
+        <ul>
+          <li>установка Meta Pixel</li>
+          <li>подключение Google Tag Manager</li>
+          <li>отслеживание кликов и заявок</li>
+          <li>проверка корректности аналитики</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Оптимизация</h3>
+        <ul>
+          <li>анализ первых результатов</li>
+          <li>корректировка объявлений</li>
+          <li>отключение неэффективных связок</li>
+          <li>рекомендации по улучшению</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section>
+    <h2>Что вы получите</h2>
+    <ul>
+      <li>корректно настроенную рекламную кампанию</li>
+      <li>понимание, как работает таргетинг именно в вашем проекте</li>
+      <li>аккуратную и осознанную работу с бюджетом</li>
+      <li>обратную связь и объяснения простым языком</li>
+    </ul>
+  </section>
+
+  <!-- PROCESS -->
+  <section>
+    <h2>Как я работаю</h2>
+    <ul class="steps">
+      <li>Обсуждаем задачу и цель рекламы</li>
+      <li>Подготавливаем рекламный кабинет и аналитику</li>
+      <li>Запускаем рекламу на тест</li>
+      <li>Анализируем первые результаты</li>
+      <li>Принимаем решение о корректировках или масштабировании</li>
+    </ul>
+  </section>
+
+  <!-- FORMATS -->
+  <section>
+    <h2>Форматы работы</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Быстрый тест вашей ниши</h3>
+        <p>Подходит для первого знакомства с таргетированной рекламой.</p>
+        <ul>
+          <li>настройка рекламы</li>
+          <li>запуск 1–2 объявлений</li>
+          <li>установка аналитики</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Сопровождение</h3>
+        <ul>
+          <li>регулярный анализ кампаний</li>
+          <li>оптимизация рекламы</li>
+          <li>отчеты и рекомендации</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top:24px;color:var(--muted);">
+      Стоимость обсуждается индивидуально.
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  <p>Напишите мне в WhatsApp — обсудим ваш проект и задачи.</p>
+  <a class="btn" href="https://wa.me/77015709523" target="_blank">
+    Написать в WhatsApp
+  </a>
+</footer>
+
+</body>
+</html>
